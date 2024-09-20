@@ -1,0 +1,60 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+ <header class="cabecalho">
+        <nav class="menu_cabecalho">
+            <a class="menu__cabecalho__link" href="index.html"> Home </a>
+            <a class="menu__cabecalho__link" href="#contato"> Contato </a>
+            <a class="menu__cabecalho__link" href="#redes_sociais"> Redes Sociais </a>
+        </nav>
+    </header>
+    <main class="main_principal">
+        <section class="main_conteudo_apr">
+                <div class="main__conteudo__apresentacao__texto">
+                    <h1 class="main__conteudo__apresentacao__texto__inicial"> Estética </h1>
+                    <h1 class="main__conteudo__apresentacao__texto__principal"> Amanda França </h1>
+                    <br><br><br><br>
+                    <h2 class="main__conteudo__apresentacao__texto__definicao">Especialista em Melasma </h2>
+                </div>
+                <img class="imagem_amanda" src="{% static 'home/assets/amanda_fundo.jpg' %}" alt="Esteticista Amanda">
+                <div class="main__conteudo__apresentacao__apr">
+                    <p>“Cada pele conta uma história única, e
+                        é por isso que meus tratamentos para <strong>Melasma</strong> são totalmente personalizados e naturais. Acredito que, ao cuidar da sua pele de forma <strong>respeitosa</strong> e <strong>naturais</strong>, podemos restaurar a sua beleza e confiança de dentro para fora.”</p>
+                </div>
+        </section>
+        <section class="main_conteudo_entre_contato">
+            <a class="main__conteudo__entre__contato__botao" href="https://wa.me/5541997790690"> Entre em contato!</a>
+        </section>
+        <section class="main_tratamento_melasma">
+            <img class="imagem_mulher1" src="{% static 'home/assets/mulher_1_sfundo.png' %}" alt="Mulher 1 sem fundo">
+            <p class="main__tratamento__melasma__apr">O tratamento de melasma foca em clarear as manchas escuras da pele com produtos naturais e cuidados personalizados. A proteção solar é fundamental para evitar o agravamento, garantindo resultados eficazes e duradouros.
+
+            </p>
+        </section>
+        <section class="main__tratamento__pele">
+            <p class="main__tratamento__pele__apr">Os tratamentos para a pele visam melhorar a saúde e a aparência, abordando questões como acne, envelhecimento e manchas. Utilizamos produtos naturais e personalizados para atender às suas necessidades, com foco em resultados eficazes e duradouros. A proteção solar é fundamental para manter a saúde da pele.
+            </p>
+            <img class="imagem_mulher2" src="{% static 'home/assets/mulher_2_sfundo.png' %}" alt="Mulher 2 sem fundo">
+        </section>
+        <section id="redes_sociais" class="redes_sociais">
+            <img src="{% static 'home/assets/instagram_icon.png' %}" alt="Instagram logo" class="redes__sociais__imagens" href="https://www.instagram.com/esteticaamandafranca/">
+            <a class="redes__sociais__texto" href="https://www.instagram.com/esteticaamandafranca/"> Confira nossas redes sociais! </a>
+            <img src="{% static 'home/assets/facebook_icon.png' %}" alt="Facebook logo" class="redes__sociais__imagens" href="https://www.facebook.com/esteticaamandafranca/?locale=pt_BR">
+        </section>
+        <section class="blog">
+            
+        </section>
+        <section id="contato" class="contato">
+            <div class="contato_contatos">
+                <h1 class="contato__contatos__titulo"> CONTATOS </h1>
+                <a href="https://wa.me/5541997790690" class="contato__contatos__texto"> +55 (41) 9.9779-0690 </a>
+                <p class="contato__contatos__texto"> amanda@amanda.com </p>
+                <a href="index.html" class="contato__contatos__texto"> esteticaamandafranca.com </a>
+            </div>
+            <div class="contato_endereco">
+                <a href="https://maps.app.goo.gl/xp5UYSCU2BTy2bDc9" class="contato__endereco__texto"> R. Quintino Bocaiúva, 2326 - Centro, Guarapuava - PR, 85010-300 </a>
+
+            </div>
+        </section>
+    </main>
+{% endblock %}

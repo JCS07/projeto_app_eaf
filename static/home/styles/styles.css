@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
+
+/* GERAL */
+:root {
+    --color-1: #90624A;
+    --color-2: #fff;
+    --color-3: #734230;
+    --color-4: #BF8969;
+    --color-5: #FFDFBB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'Kaisei Decol', serif;
+}
+
+/* HEADER */
+.cabecalho {
+    height: 7.5rem;
+    display: flex;
+    background-color: var(--color-1);
+    align-content: center;
+    padding-left: 5%;
+}
+
+.menu_cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menu__cabecalho__link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+/* MAIN GERAL */
+/*.main_principal {} */
+
+/* MAIN APRESENTAÇÃO */
+.main_conteudo_apr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5% 5%;
+}
+
+.main__conteudo__apresentacao__texto__inicial {
+    display: flex;
+    width: 25rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--color-3);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__conteudo__apresentacao__texto__principal {
+    width: 25rem;
+    height: 5rem;
+    color: var(--color-4);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main__conteudo__apresentacao__texto__definicao {
+    display: flex;
+    width: 25rem;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-3);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagem_amanda {
+    width: auto;
+    height: 34rem;
+    border-radius: 7.5rem;
+}
+
+.main__conteudo__apresentacao__apr {
+    display: flex;
+    width: 25rem;
+    height: 17.5rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-justify: auto;
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--color-1);
+}
+
+/* ENTRE EM CONTATO BOTÃO */
+.main_conteudo_entre_contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--color-4) 0%, var(--color-5) 100%);
+    height: 6.25rem;
+}
+
+.main__conteudo__entre__contato__botao {
+    text-decoration: none;
+    color: var(--color-2);
+    text-align: center;
+    padding-top: 0.625rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    width: 16.25rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background: var(--color-3);
+    box-shadow: 2.5px 5px 2.9px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* TRATAMENTO MELASMA */
+.main_tratamento_melasma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 2.5%;
+    gap: 5rem;
+    background-color: var(--color-5);
+}
+
+.imagem_mulher1 {
+    display: flex;
+    width: 40%;
+    height: 40%;
+}
+
+.main__tratamento__melasma__apr {
+    display: flex;
+    width: 34rem;
+    height: 10rem;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* TRATAMENTO PELE */
+.main__tratamento__pele {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 2.5%;
+    gap: 5rem;
+    background-color: var(--color-1);
+}
+
+.imagem_mulher2 {
+    display: flex;
+    width: 40%;
+    height: 40%;
+}
+
+.main__tratamento__pele__apr {
+    display: flex;
+    width: 34rem;
+    height: 10rem;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-5);
+}
+
+/* REDES SOCIAIS */
+.redes_sociais {
+    height: 6.25rem;
+    background-color: var(--color-5);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.redes__sociais__imagens {
+    width: auto;
+    height: 50%;
+}
+
+.redes__sociais__texto {
+    text-decoration: none;
+}
+
+.contato {
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+    align-items: center;
+}
+
+.contato_contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--color-3);
+}
+
+.contato__contatos__texto {
+    text-decoration: none;
+}
+
+.contato__endereco__texto {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: var(--color-1);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-2);
+    font-size: 0.75rem;
+}
