@@ -1,0 +1,20 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="login-container">
+        <div class="login-box">
+            <h2 class="label-text">Login</h2>
+            <form action="/login" method="POST" class="form">
+                <div class="form-group">
+                    <label for="username" class="label-text">Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="label-text">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
