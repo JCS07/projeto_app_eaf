@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
+
+:root {
+    --color-1: #90624A;
+    --color-2: #fff;
+    --color-3: #734230;
+    --color-4: #BF8969;
+    --color-5: #FFDFBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/menu_geral/assets/fundo_login.png');
+    font-family: 'Kaisei Decol', serif;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    border-radius: 0.5rem;
+    padding: 1%;
+    width: 30rem;
+    align-items: center;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-button {
+    display: inline-block;
+    width: 20rem;
+    padding: 1rem;
+    background-color: var(--color-1);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: var(--color-4);
+}
+
+@media (min-width: 768px) {
+    .menu-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .menu-button {
+        width: 200px;
+    }
+}

@@ -248,18 +248,28 @@ body {
 }
 
 /*para a tela de LOGIN */
+/* Zerar margens e paddings de todos os elementos */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    height: 100%; /* Garante que a altura do body ocupe 100% */
 }
 
+/* Aplicar box-sizing corretamente a todos os elementos */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Container principal do login */
 .login-container {
-    height: 100vh;
+    height: 100vh; /* Tela cheia */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
     background-color: #f4f4f4;
     background-image: url('/static/home/assets/fundo_login.png');
     background-size: cover; 
@@ -267,60 +277,84 @@ body, html {
     background-repeat: no-repeat;
 }
 
+/* Estilização da caixa de login */
 .login-box {
-    width: 300px;
-    padding: 50px;
+    width: 350px; /* Largura maior para inputs */
+    padding: 40px;
     background-color: var(--color-4);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     text-align: center;
 }
 
-h2 {
+/* Título do login */
+h2.label-text {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #fff;
 }
 
+/* Estrutura do formulário */
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Garantir que os elementos fiquem em coluna */
+    align-items: center; /* Centralizar elementos no eixo horizontal */
 }
 
+/* Grupos de inputs */
 .form-group {
     margin-bottom: 20px;
+    width: 100%; /* Os campos devem ocupar toda a largura da caixa de login */
 }
 
+/* Labels dos inputs */
 .form-group label {
     margin-bottom: 8px;
     display: block;
     font-size: 14px;
-    color: #fff;
+    color: #D9D9D9;
+    text-align: left; /* Alinha os labels à esquerda */
 }
 
+/* Estilização dos inputs */
 .form-group input {
-    width: 250px;
-    padding: 10px;
+    width: 100%; /* Inputs ocupam toda a largura da caixa */
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para quando o input está em foco */
+.form-group input:focus {
+    border-color: var(--color-5);
+}
+
+/* Botão de submit */
 .btn-primary {
-    padding: 10px;
+    padding: 12px;
     background-color: var(--color-3);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* O botão ocupa toda a largura disponível */
+    margin-top: 10px; /* Adiciona um espaço entre o último input e o botão */
+    transition: background-color 0.3s ease;
 }
 
-.label-text{
-    color: #fff;
-}
-
-/* Classe modificadora para reuso */
+/* Estilo do botão ao passar o mouse */
 .btn-primary:hover {
     background-color: var(--color-5);
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%; /* Aumenta a responsividade */
+        padding: 20px;
+    }
 }
