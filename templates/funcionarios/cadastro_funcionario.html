@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Funcionário</title>
+    <link rel="stylesheet" href="{% static 'funcionarios/styles/cadastro.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        <form method="POST" action="{% url 'cadastro_funcionario' %}">
+            {% csrf_token %}
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+            
+            <label for="data_contratacao">Data de Contratação:</label>
+            <input type="date" id="data_contratacao" name="data_contratacao" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <a href="{% url 'lista_funcionarios' %}">Voltar à lista de funcionários</a>
+    </div>    
+</body>
+</html>

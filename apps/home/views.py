@@ -28,6 +28,6 @@ def login_view(request):
             return redirect('menu_geral')
         else:
             messages.error(request, 'Erro ao efetuar login')
-            return redirect('login/')
+            return redirect('login')
 
     return render(request, 'home/login.html', {'form': form})
