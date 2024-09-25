@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
+
+:root {
+    --color-1: #90624A;  /* Marrom claro */
+    --color-2: #fff;      /* Branco */
+    --color-3: #734230;  /* Marrom escuro */
+    --color-4: #BF8969;  /* Marrom médio */
+    --color-5: #FFDFBB;  /* Bege claro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaisei Decol', serif;
+    background-image: url('/static/assets/fundo_geral.png'); /* Atualize conforme necessário */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 150vh;
+}
+
+.container {
+    background-color: var(--color-2);
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  /* Define uma largura máxima para o formulário */
+    display: flex;
+    flex-direction: column;  /* Alinha os filhos em coluna */
+    justify-content: center;  /* Centraliza verticalmente */
+}
+
+h1 {
+    font-size: 1.8rem;  /* Ajusta o tamanho da fonte do cabeçalho */
+    color: var(--color-3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;  /* Espaçamento entre os campos do formulário */
+}
+
+label {
+    display: block;  /* Faz os rótulos ocuparem toda a largura disponível */
+    margin-bottom: 5px;  /* Espaçamento abaixo do rótulo */
+    color: var(--color-3);
+    font-weight: 500;  /* Aumenta o peso da fonte do rótulo para destaque */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);  /* Ajusta a largura para levar em conta o padding */
+    padding: 10px;  /* Espaçamento interno dos campos */
+    border: 1px solid var(--color-3);
+    border-radius: 0.5rem;
+    font-size: 1rem;  /* Ajusta o tamanho da fonte dos campos de entrada */
+    margin-bottom: 10px;  /* Adiciona um espaço abaixo dos inputs */
+}
+
+button {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;  /* Faz o botão ocupar toda a largura do container */
+}
+
+button:hover {
+    background-color: var(--color-4);
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

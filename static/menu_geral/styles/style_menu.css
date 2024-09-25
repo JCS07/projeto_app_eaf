@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/static/menu_geral/assets/fundo_login.png');
+    background-image: url('/static/assets/fundo_geral.png');
     font-family: 'Kaisei Decol', serif;
 }
 

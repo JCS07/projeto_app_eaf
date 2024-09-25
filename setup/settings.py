@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.home.apps.HomeConfig',
     'apps.menu_geral.apps.MenuGeralConfig',
     'apps.funcionarios.apps.FuncionariosConfig',
+    'apps.clientes.apps.ClientesConfig',
 ]
 
 MIDDLEWARE = [

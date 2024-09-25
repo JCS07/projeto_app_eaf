@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Kaisei Decol', serif;
-    background-image: url('/static/assets/fundo_geral.png');
+    background-image: url('/static/assets/fundo_geral.png'); /* Atualize conforme necessário */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;  /* Aumenta a largura máxima do container */
 }
 
 header {
@@ -42,11 +42,11 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;  /* Diminui o tamanho da fonte do cabeçalho */
     color: var(--color-2);
     background-color: var(--color-3);
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;  /* Ajusta o padding */
     width: 100%;
     text-align: center;
 }
@@ -54,10 +54,10 @@ header h1 {
 .btn-cadastrar {
     background-color: var(--color-1);
     color: var(--color-2);
-    padding: 10px 20px;
+    padding: 8px 16px;  /* Ajusta o padding do botão */
     text-decoration: none;
     border-radius: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;  /* Diminui o tamanho da fonte do botão */
     transition: background-color 0.3s ease;
     text-align: center;
     display: inline-block;
@@ -67,7 +67,7 @@ header h1 {
     background-color: var(--color-4);
 }
 
-.funcionarios-lista {
+.clientes-lista {
     width: 100%;
     border-collapse: collapse;
     background-color: var(--color-5);
@@ -75,22 +75,23 @@ header h1 {
     overflow: hidden;
 }
 
-.funcionarios-lista th, .funcionarios-lista td {
-    padding: 15px;
+.clientes-lista th, .clientes-lista td {
+    padding: 10px;  /* Ajusta o padding das células da tabela */
     text-align: left;
     border-bottom: 1px solid var(--color-3);
+    font-size: 0.9rem;  /* Diminui o tamanho da fonte das células */
 }
 
-.funcionarios-lista th {
+.clientes-lista th {
     background-color: var(--color-3);
     color: var(--color-2);
 }
 
-.funcionarios-lista td {
+.clientes-lista td {
     color: var(--color-3);
 }
 
-.funcionarios-lista tr:hover {
+.clientes-lista tr:hover {
     background-color: var(--color-5);
     color: var(--color-3);
 }
